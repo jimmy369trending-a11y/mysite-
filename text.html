@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;font-family:sans-serif">
+
+<h2>Text Tools</h2>
+
+<textarea id="text" rows="5" cols="30"></textarea><br><br>
+
+<button onclick="upper()">UPPER</button>
+<button onclick="lower()">lower</button>
+<button onclick="count()">Count</button>
+
+<p id="result"></p>
+
+<script>
+function upper(){
+  text.value = text.value.toUpperCase();
+}
+
+function lower(){
+  text.value = text.value.toLowerCase();
+}
+
+function count(){
+  result.innerText = "Words: " + text.value.split(" ").length;
+}
+</script>
+
+</body>
+</html>
+

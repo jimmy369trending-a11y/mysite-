@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URL Shortener</title>
+
+<link rel="stylesheet" href="url.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h2>🔗 URL Shortener</h2>
+
+  <div class="box">
+    <input id="urlInput" type="text" placeholder="Enter your URL here...">
+    <button onclick="shortenURL()">Shorten</button>
+  </div>
+
+  <div id="resultBox" class="result hidden">
+    <p id="shortLink"></p>
+    <button onclick="copyLink()">Copy</button>
+  </div>
+
+  <p id="status"></p>
+
+</div>
+
+<script src="url.js"></script>
+</body>
+</html>

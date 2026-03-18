@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div id="sidebar" class="sidebar">
+  <h2>Menu</h2>
+
+  <div class="item" onclick="openSettings('general')">⚙️ General</div>
+  <div class="item" onclick="openSettings('appearance')">🎨 Appearance</div>
+  <div class="item" onclick="openSettings('account')">🔐 Account</div>
+  <div class="item" onclick="openSettings('premium')">💎 Premium</div>
+  <div class="item" onclick="openSettings('about')">ℹ️ About</div>
+</div>
+
+<div id="overlay" onclick="closeMenu()"></div>
+
+<!-- SETTINGS PANEL -->
+<div id="settingsPanel" class="settings-panel">
+  <div class="settings-header">
+    <span id="settingsTitle">Settings</span>
+    <button onclick="closeSettings()">✖</button>
+  </div>
+
+  <div id="settingsContent"></div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+
+  <div class="header">
+    <div class="menu" onclick="openMenu()">☰</div>
+    <div class="title">AI HUB</div>
+    <div class="profile">👤</div>
+  </div>
+
+  <h1>What can I help with?</h1>
+
+  <div class="grid">
+    <div class="card" onclick="openPage('chatbot')">🤖<h3>Chatbot</h3></div>
+    <div class="card" onclick="openPage('qr')">🔳<h3>QR Generator</h3></div>
+    <div class="card" onclick="openPage('url')">🔗<h3>URL Shortener</h3></div>
+    <div class="card" onclick="openPage('text')">✍️<h3>Text Tools</h3></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

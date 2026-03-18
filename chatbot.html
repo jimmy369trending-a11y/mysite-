@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:sans-serif">
+
+<h2>🤖 Cute Chatbot</h2>
+
+<div id="chat"></div>
+
+<input id="msg">
+<button onclick="send()">Send</button>
+
+<script>
+function send(){
+  let msg = document.getElementById("msg").value;
+  let chat = document.getElementById("chat");
+
+  chat.innerHTML += "<p><b>You:</b> "+msg+"</p>";
+
+  let reply = "I am learning 🤖";
+  if(msg.includes("hi")) reply = "Hello 👋";
+  if(msg.includes("name")) reply = "I am your AI";
+
+  chat.innerHTML += "<p><b>Bot:</b> "+reply+"</p>";
+}
+</script>
+
+</body>
+</html>
+
